@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_height="wrap_content" 
+   android:layout_width="fill_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       >
+	<Button
+        android:id="@+id/hostButton"
+        android:layout_width="110dp" 
+        android:layout_height="60dp"
+        android:text="@string/create"
+        android:textSize="12sp" 
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"> 
+    </Button>
+    
+    <Button
+        android:id="@+id/destroyButton"
+        android:layout_width="110dp" 
+        android:layout_height="60dp"
+        android:text="@string/destroy"
+        android:textSize="12sp" 
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"> 
+    </Button>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       >
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="110dp" 
+        android:layout_height="60dp"
+        android:text="@string/join_group"
+        android:textSize="12sp" 
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"> 
+    </Button>
+    
+    <Button
+        android:id="@+id/leaveButton"
+        android:layout_width="110dp" 
+        android:layout_height="60dp"
+        android:text="@string/leave"
+        android:textSize="12sp" 
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"> 
+    </Button>
+    </LinearLayout>  
+     
+    
+    <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       >
+    <Button
+        android:id="@+id/unlockButton"
+        android:layout_width="110dp" 
+        android:layout_height="60dp"
+        android:text="@string/unlock"
+        android:textSize="12sp" 
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"> 
+    </Button>
+    
+    <Button
+        android:id="@+id/lockButton"
+        android:layout_width="110dp" 
+        android:layout_height="60dp"
+        android:text="@string/lock"
+        android:textSize="12sp" 
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"> 
+    </Button>
+    </LinearLayout> 
+    
+    <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       >
+    <Button
+        android:id="@+id/portButton"
+        android:layout_width="110dp" 
+        android:layout_height="60dp"
+        android:text="@string/port"
+        android:textSize="12sp" 
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"> 
+    </Button>
+    
+    <Button
+        android:id="@+id/joinOrCreateButton"
+        android:layout_width="110dp" 
+        android:layout_height="60dp"
+        android:text="@string/join_or_create"
+        android:textSize="12sp" 
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"> 
+    </Button>
+    </LinearLayout> 
+    
+    <Button
+        android:id="@+id/peersButton"
+        android:layout_width="110dp" 
+        android:layout_height="60dp"
+        android:text="@string/peers"
+        android:textSize="12sp" 
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"> 
+    </Button>
+    
+    <TextView
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:textSize="20sp" 
+       android:gravity="center"
+       android:text="@string/select_ping_group"
+       android:layout_marginTop="8dp"
+       android:padding="8dp">
+    </TextView>
+    
+    <Spinner
+        android:id="@+id/pingGroupList"           
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+    />
+    
+    <EditText
+       android:id="@+id/pingText"
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:textSize="14sp" 
+       android:layout_gravity="center"
+       android:hint="@string/pinging">
+    </EditText>
+    
+</LinearLayout>
+</ScrollView>

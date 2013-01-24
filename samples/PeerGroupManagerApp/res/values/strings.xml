@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Peer Group Manager App</string>
+    <string name="ok">OK</string>
+    <string name="create">Create Group</string>
+    <string name="destroy">Destroy Group</string>
+    <string name="hosting">Group Name</string>
+    <string name="join">Join</string>
+    <string name="join_group">Join Group</string>
+    <string name="leave">Leave Group</string>
+    <string name="peers">Get Peers</string>
+    <string name="select_ping_group">Select Group To Ping</string>
+    <string name="pinging">Send Message to Group</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="pcs">Peers in the Group</string>
+    <string name="hosted_groups">Hosted Groups</string>
+    <string name="joined_groups">Joined Groups</string>
+    <string name="select_group">Select a group from the list below</string>
+    <string name="enter_message_hint">Enter message</string>
+    <string name="create_groups">Enter a Group Name</string>
+    <string name="add">Add</string>
+    <string name="select_master_group">Select a Master Group</string>
+    <string name="lock">Lock Group</string>
+    <string name="unlock">Unlock Group</string>
+    <string name="join_groups">Available Groups</string>
+    <string name="port">Set Session port</string>
+    <string name="set_port">Set Port</string>
+    <string name="port_session">Session Name</string>
+    <string name="join_or_create">Join or Create Group</string>
+</resources>
