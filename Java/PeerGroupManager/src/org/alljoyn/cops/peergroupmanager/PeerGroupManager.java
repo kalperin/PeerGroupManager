@@ -1,18 +1,18 @@
-/*******************************************************************************
-* Copyright 2012 - 2013, Qualcomm Innovation Center, Inc.
-*
-*    Licensed under the Apache License, Version 2.0 (the "License");
-*    you may not use this file except in compliance with the License.
-*    You may obtain a copy of the License at
-*
-*        http://www.apache.org/licenses/LICENSE-2.0
-*
-*    Unless required by applicable law or agreed to in writing, software
-*    distributed under the License is distributed on an "AS IS" BASIS,
-*    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-*    See the License for the specific language governing permissions and
-*    limitations under the License.
-******************************************************************************/
+/******************************************************************************
+ * Copyright 2013, Qualcomm Innovation Center, Inc.
+ *
+ *    All rights reserved.
+ *    This file is licensed under the 3-clause BSD license in the NOTICE.txt
+ *    file for this project. A copy of the 3-clause BSD license is found at:
+ *
+ *        http://opensource.org/licenses/BSD-3-Clause.
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the license is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the license for the specific language governing permissions and
+ *    limitations under the license.
+ ******************************************************************************/
 
 package org.alljoyn.cops.peergroupmanager;
 
@@ -140,7 +140,7 @@ public class PeerGroupManager implements PeerGroupManagerInterface {
      * the AllJoyn bus and start discovering groups created by other 
      * PeerGroupManagers that use the same group prefix.
      * 
-     * @param groupPrefix  the prefix of the advertised name that will be used 
+     * @param pgPrefix     the prefix of the advertised name that will be used 
      *                     for advertisement and discovery.
      *                     NOTE: Your PeerGroupManager will only be able to 
      *                     communicate with other PeerGroupManagers that use 
@@ -1125,6 +1125,39 @@ public class PeerGroupManager implements PeerGroupManagerInterface {
     }
     
     /**
+     * registerBusObject
+     * registers a bus object on the bus.
+     * 
+     * @param   busObjectData  the bus object and path to register
+     * @return  OK if successful
+     */
+    public synchronized Status registerBusObject(BusObjectData busObjectData)
+    {
+        String methodName = "registerBusObject()";
+        Status status = Status.FAIL;
+        
+        // Make sure the bus attachment is set up
+        if(isBusInvalid()) {
+            logInfo(methodName, "Invalid bus attachment");
+            return status;
+        }
+        
+        if(busObjectData == null) {
+            logInfo(methodName, "Invalid bus object");
+            return null;
+        }
+
+        status = bus.registerBusObject(busObjectData.getBusObject(), busObjectData.getObjectPath());
+        logInfo("registerBusObjects()", "Registering bus object at " + busObjectData.getObjectPath() 
+                + " - " + status.toString());
+        if(status == Status.OK) {
+            registeredBusObjects.add(busObjectData.getBusObject());
+        }
+        
+        return status;
+    }
+    
+    /**
      * registerModule
      * registers a module with the PeerGroupManager to allow it to communicate
      * over the specified group. This will provide the module with the
@@ -1819,12 +1852,7 @@ public class PeerGroupManager implements PeerGroupManagerInterface {
             
         // Register all the bus objects in the list of given bus objects
         for (BusObjectData busObjectData : busObjects) {
-            Status status = bus.registerBusObject(busObjectData.getBusObject(), busObjectData.getObjectPath());
-            logInfo("registerBusObjects()", "Registering bus object at " + busObjectData.getObjectPath() 
-                    + " - " + status.toString());
-            if(status == Status.OK) {
-                registeredBusObjects.add(busObjectData.getBusObject());
-            }
+        	registerBusObject(busObjectData);
         }
     }
 

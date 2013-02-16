@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B87E2F65170F69A20073523B /* API Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B87E2F66170F69A30073523B /* Build configuration list for PBXAggregateTarget "API Documentation" */;
+			buildPhases = (
+				B87E2F6F170F6A060073523B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "API Documentation";
+			productName = "API Documentation";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		925393BA16DD761E00BD6399 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 925393B916DD761E00BD6399 /* libstdc++.6.0.9.dylib */; };
+		927A0C44170218200062BB04 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0C411702180F0062BB04 /* libcrypto.a */; };
+		92A2702F16DBF6EF00EC1654 /* PGMGroupRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2702E16DBF6EF00EC1654 /* PGMGroupRegistry.m */; };
+		92DA795D16CF0E1C00A77F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DA795C16CF0E1C00A77F9F /* Foundation.framework */; };
+		92DA796C16CF0E1C00A77F9F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DA796B16CF0E1C00A77F9F /* SenTestingKit.framework */; };
+		92DA796E16CF0E1C00A77F9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DA796D16CF0E1C00A77F9F /* UIKit.framework */; };
+		92DA796F16CF0E1C00A77F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DA795C16CF0E1C00A77F9F /* Foundation.framework */; };
+		92DA797216CF0E1C00A77F9F /* libPeerGroupManager_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DA795916CF0E1C00A77F9F /* libPeerGroupManager_iOS.a */; };
+		92DA797816CF0E1C00A77F9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92DA797616CF0E1C00A77F9F /* InfoPlist.strings */; };
+		92DA797B16CF0E1C00A77F9F /* PeerGroupManager_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA797A16CF0E1C00A77F9F /* PeerGroupManager_iOSTests.m */; };
+		92DA798E16CF0EAD00A77F9F /* PGMGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA798616CF0EAD00A77F9F /* PGMGroup.m */; };
+		92DA798F16CF0EAD00A77F9F /* PGMGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA798616CF0EAD00A77F9F /* PGMGroup.m */; };
+		92DA799016CF0EAD00A77F9F /* PGMJoinOrCreateReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA798916CF0EAD00A77F9F /* PGMJoinOrCreateReturn.m */; };
+		92DA799116CF0EAD00A77F9F /* PGMJoinOrCreateReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DA798916CF0EAD00A77F9F /* PGMJoinOrCreateReturn.m */; };
+		92DA799216CF0EAD00A77F9F /* PGMPeerGroupManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92DA798C16CF0EAD00A77F9F /* PGMPeerGroupManager.mm */; };
+		92DA799316CF0EAD00A77F9F /* PGMPeerGroupManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92DA798C16CF0EAD00A77F9F /* PGMPeerGroupManager.mm */; };
+		92DA799516CF153700A77F9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DA799416CF153700A77F9F /* SystemConfiguration.framework */; };
+		B8DA8DD416FB7FE7006CFE7F /* libAllJoynFramework_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8580C8116EED10F00CC0D8C /* libAllJoynFramework_iOS.a */; };
+		B8DA8DD616FB8031006CFE7F /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 925393B916DD761E00BD6399 /* libstdc++.6.0.9.dylib */; };
+		B8DA8DE316FB81EC006CFE7F /* libAllJoynFramework_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8580C8116EED10F00CC0D8C /* libAllJoynFramework_iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		927A0C401702180F0062BB04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9222472517021791003AEFAA /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9069D28C0FCE659A0042E34C;
+			remoteInfo = crypto;
+		};
+		927A0C421702181A0062BB04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9222472517021791003AEFAA /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9069D28B0FCE659A0042E34C;
+			remoteInfo = crypto;
+		};
+		92DA797016CF0E1C00A77F9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92DA795116CF0E1C00A77F9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92DA795816CF0E1C00A77F9F;
+			remoteInfo = PeerGroupManager_iOS;
+		};
+		B8580C8016EED10F00CC0D8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AC1030A8156EC82300D2853A;
+			remoteInfo = AllJoynFramework_iOS;
+		};
+		B8580C8216EED10F00CC0D8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AC1030B8156EC82300D2853A;
+			remoteInfo = AllJoynFramework_iOSTests;
+		};
+		B8DA8DD216FB7FDD006CFE7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AC1030A7156EC82300D2853A;
+			remoteInfo = AllJoynFramework_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92DA795716CF0E1C00A77F9F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9222472517021791003AEFAA /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = openssl.xcodeproj; sourceTree = OPENSSL_PROJ; };
+		925393B916DD761E00BD6399 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		92A2702E16DBF6EF00EC1654 /* PGMGroupRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMGroupRegistry.m; sourceTree = "<group>"; };
+		92DA795916CF0E1C00A77F9F /* libPeerGroupManager_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPeerGroupManager_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DA795C16CF0E1C00A77F9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		92DA796016CF0E1C00A77F9F /* PeerGroupManager_iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeerGroupManager_iOS-Prefix.pch"; sourceTree = "<group>"; };
+		92DA796A16CF0E1C00A77F9F /* PeerGroupManager_iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeerGroupManager_iOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DA796B16CF0E1C00A77F9F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		92DA796D16CF0E1C00A77F9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		92DA797516CF0E1C00A77F9F /* PeerGroupManager_iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeerGroupManager_iOSTests-Info.plist"; sourceTree = "<group>"; };
+		92DA797716CF0E1C00A77F9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		92DA797916CF0E1C00A77F9F /* PeerGroupManager_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerGroupManager_iOSTests.h; sourceTree = "<group>"; };
+		92DA797A16CF0E1C00A77F9F /* PeerGroupManager_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerGroupManager_iOSTests.m; sourceTree = "<group>"; };
+		92DA798516CF0EAD00A77F9F /* PGMGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMGroup.h; sourceTree = "<group>"; };
+		92DA798616CF0EAD00A77F9F /* PGMGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMGroup.m; sourceTree = "<group>"; };
+		92DA798716CF0EAD00A77F9F /* PGMGroupRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMGroupRegistry.h; sourceTree = "<group>"; };
+		92DA798816CF0EAD00A77F9F /* PGMJoinOrCreateReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMJoinOrCreateReturn.h; sourceTree = "<group>"; };
+		92DA798916CF0EAD00A77F9F /* PGMJoinOrCreateReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMJoinOrCreateReturn.m; sourceTree = "<group>"; };
+		92DA798A16CF0EAD00A77F9F /* PGMPeerGroupDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMPeerGroupDelegate.h; sourceTree = "<group>"; };
+		92DA798B16CF0EAD00A77F9F /* PGMPeerGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMPeerGroupManager.h; sourceTree = "<group>"; };
+		92DA798C16CF0EAD00A77F9F /* PGMPeerGroupManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMPeerGroupManager.mm; sourceTree = "<group>"; };
+		92DA798D16CF0EAD00A77F9F /* PGMPeerGroupModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMPeerGroupModule.h; sourceTree = "<group>"; };
+		92DA799416CF153700A77F9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AllJoynFramework_iOS.xcodeproj; path = alljoyn_objc/AllJoynFramework_iOS/AllJoynFramework_iOS.xcodeproj; sourceTree = ALLJOYN_HOME; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92DA795616CF0E1C00A77F9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927A0C44170218200062BB04 /* libcrypto.a in Frameworks */,
+				B8DA8DD416FB7FE7006CFE7F /* libAllJoynFramework_iOS.a in Frameworks */,
+				925393BA16DD761E00BD6399 /* libstdc++.6.0.9.dylib in Frameworks */,
+				92DA799516CF153700A77F9F /* SystemConfiguration.framework in Frameworks */,
+				92DA795D16CF0E1C00A77F9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DA796616CF0E1C00A77F9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8DA8DE316FB81EC006CFE7F /* libAllJoynFramework_iOS.a in Frameworks */,
+				B8DA8DD616FB8031006CFE7F /* libstdc++.6.0.9.dylib in Frameworks */,
+				92DA796C16CF0E1C00A77F9F /* SenTestingKit.framework in Frameworks */,
+				92DA796E16CF0E1C00A77F9F /* UIKit.framework in Frameworks */,
+				92DA796F16CF0E1C00A77F9F /* Foundation.framework in Frameworks */,
+				92DA797216CF0E1C00A77F9F /* libPeerGroupManager_iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		927A0C3B1702180F0062BB04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				927A0C411702180F0062BB04 /* libcrypto.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92DA795016CF0E1C00A77F9F = {
+			isa = PBXGroup;
+			children = (
+				9222472517021791003AEFAA /* openssl.xcodeproj */,
+				B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */,
+				925393B916DD761E00BD6399 /* libstdc++.6.0.9.dylib */,
+				92DA799416CF153700A77F9F /* SystemConfiguration.framework */,
+				92DA795E16CF0E1C00A77F9F /* PeerGroupManager_iOS */,
+				92DA797316CF0E1C00A77F9F /* PeerGroupManager_iOSTests */,
+				92DA795B16CF0E1C00A77F9F /* Frameworks */,
+				92DA795A16CF0E1C00A77F9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92DA795A16CF0E1C00A77F9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92DA795916CF0E1C00A77F9F /* libPeerGroupManager_iOS.a */,
+				92DA796A16CF0E1C00A77F9F /* PeerGroupManager_iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92DA795B16CF0E1C00A77F9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92DA795C16CF0E1C00A77F9F /* Foundation.framework */,
+				92DA796B16CF0E1C00A77F9F /* SenTestingKit.framework */,
+				92DA796D16CF0E1C00A77F9F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92DA795E16CF0E1C00A77F9F /* PeerGroupManager_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				92DA798516CF0EAD00A77F9F /* PGMGroup.h */,
+				92DA798616CF0EAD00A77F9F /* PGMGroup.m */,
+				92DA798716CF0EAD00A77F9F /* PGMGroupRegistry.h */,
+				92A2702E16DBF6EF00EC1654 /* PGMGroupRegistry.m */,
+				92DA798816CF0EAD00A77F9F /* PGMJoinOrCreateReturn.h */,
+				92DA798916CF0EAD00A77F9F /* PGMJoinOrCreateReturn.m */,
+				92DA798A16CF0EAD00A77F9F /* PGMPeerGroupDelegate.h */,
+				92DA798B16CF0EAD00A77F9F /* PGMPeerGroupManager.h */,
+				92DA798C16CF0EAD00A77F9F /* PGMPeerGroupManager.mm */,
+				92DA798D16CF0EAD00A77F9F /* PGMPeerGroupModule.h */,
+				92DA795F16CF0E1C00A77F9F /* Supporting Files */,
+			);
+			path = PeerGroupManager_iOS;
+			sourceTree = "<group>";
+		};
+		92DA795F16CF0E1C00A77F9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92DA796016CF0E1C00A77F9F /* PeerGroupManager_iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92DA797316CF0E1C00A77F9F /* PeerGroupManager_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				92DA797916CF0E1C00A77F9F /* PeerGroupManager_iOSTests.h */,
+				92DA797A16CF0E1C00A77F9F /* PeerGroupManager_iOSTests.m */,
+				92DA797416CF0E1C00A77F9F /* Supporting Files */,
+			);
+			path = PeerGroupManager_iOSTests;
+			sourceTree = "<group>";
+		};
+		92DA797416CF0E1C00A77F9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92DA797516CF0E1C00A77F9F /* PeerGroupManager_iOSTests-Info.plist */,
+				92DA797616CF0E1C00A77F9F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8580C7B16EED10F00CC0D8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8580C8116EED10F00CC0D8C /* libAllJoynFramework_iOS.a */,
+				B8580C8316EED10F00CC0D8C /* AllJoynFramework_iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92DA795816CF0E1C00A77F9F /* PeerGroupManager_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92DA797E16CF0E1C00A77F9F /* Build configuration list for PBXNativeTarget "PeerGroupManager_iOS" */;
+			buildPhases = (
+				92DA795516CF0E1C00A77F9F /* Sources */,
+				92DA795616CF0E1C00A77F9F /* Frameworks */,
+				92DA795716CF0E1C00A77F9F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				927A0C431702181A0062BB04 /* PBXTargetDependency */,
+				B8DA8DD316FB7FDD006CFE7F /* PBXTargetDependency */,
+			);
+			name = PeerGroupManager_iOS;
+			productName = PeerGroupManager_iOS;
+			productReference = 92DA795916CF0E1C00A77F9F /* libPeerGroupManager_iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		92DA796916CF0E1C00A77F9F /* PeerGroupManager_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92DA798116CF0E1C00A77F9F /* Build configuration list for PBXNativeTarget "PeerGroupManager_iOSTests" */;
+			buildPhases = (
+				92DA796516CF0E1C00A77F9F /* Sources */,
+				92DA796616CF0E1C00A77F9F /* Frameworks */,
+				92DA796716CF0E1C00A77F9F /* Resources */,
+				92DA796816CF0E1C00A77F9F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92DA797116CF0E1C00A77F9F /* PBXTargetDependency */,
+			);
+			name = PeerGroupManager_iOSTests;
+			productName = PeerGroupManager_iOSTests;
+			productReference = 92DA796A16CF0E1C00A77F9F /* PeerGroupManager_iOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92DA795116CF0E1C00A77F9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = QuIC;
+			};
+			buildConfigurationList = 92DA795416CF0E1C00A77F9F /* Build configuration list for PBXProject "PeerGroupManager_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 92DA795016CF0E1C00A77F9F;
+			productRefGroup = 92DA795A16CF0E1C00A77F9F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B8580C7B16EED10F00CC0D8C /* Products */;
+					ProjectRef = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
+				},
+				{
+					ProductGroup = 927A0C3B1702180F0062BB04 /* Products */;
+					ProjectRef = 9222472517021791003AEFAA /* openssl.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				92DA795816CF0E1C00A77F9F /* PeerGroupManager_iOS */,
+				92DA796916CF0E1C00A77F9F /* PeerGroupManager_iOSTests */,
+				B87E2F65170F69A20073523B /* API Documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		927A0C411702180F0062BB04 /* libcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrypto.a;
+			remoteRef = 927A0C401702180F0062BB04 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8580C8116EED10F00CC0D8C /* libAllJoynFramework_iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAllJoynFramework_iOS.a;
+			remoteRef = B8580C8016EED10F00CC0D8C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B8580C8316EED10F00CC0D8C /* AllJoynFramework_iOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AllJoynFramework_iOSTests.octest;
+			remoteRef = B8580C8216EED10F00CC0D8C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92DA796716CF0E1C00A77F9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DA797816CF0E1C00A77F9F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92DA796816CF0E1C00A77F9F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		B87E2F6F170F6A060073523B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Xcode appledoc script\n#\n# Start variables\nPGM_DOC_COMPANY_NAME=\"Qualcomm Innovation Center, Inc.\";\nPGM_DOC_COMPANY_ID=\"org.alljoyn.cops\";\nPGM_DOC_PLATFORM=\"macosx\";\nPGM_DOC_PATH_OUTPUT=\"${SOURCE_ROOT}/doc\";\nPGM_DOC_PATH_COMMAND=`(echo appledoc; ls /usr/bin/appledoc; ls /usr/local/bin/appledoc; which appledoc) 2>/dev/null | tail -1`\nPGM_DOC_PATH_TEMPLATES=`(echo; ls -d \"${HOME}/Library/Application Support/appledoc\"; ls -d \"${HOME}/.appledoc\") 2>/dev/null | tail -1`\n# End variables\n#\nif [ \"${PGM_DOC_PATH_TEMPLATES}\" != \"\" ]; then\n${PGM_DOC_PATH_COMMAND} \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${PGM_DOC_COMPANY_NAME}\" \\\n--company-id \"${PGM_DOC_COMPANY_ID}\" \\\n--docset-platform-family \"${PGM_DOC_PLATFORM}\" \\\n--output \"${PGM_DOC_PATH_OUTPUT}\" \\\n--templates \"${PGM_DOC_PATH_TEMPLATES}\" \\\n--index-desc \"${SOURCE_ROOT}/PeerGroupManager_iOS/index.txt\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--ignore FileTransferModuleTests \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"\nelse\n${PGM_DOC_PATH_COMMAND} \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${PGM_DOC_COMPANY_NAME}\" \\\n--company-id \"${PGM_DOC_COMPANY_ID}\" \\\n--docset-platform-family \"${PGM_DOC_PLATFORM}\" \\\n--output \"${PGM_DOC_PATH_OUTPUT}\" \\\n--index-desc \"${SOURCE_ROOT}/PeerGroupManager_iOS/index.txt\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--ignore FileTransferModuleTests \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92DA795516CF0E1C00A77F9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DA798E16CF0EAD00A77F9F /* PGMGroup.m in Sources */,
+				92DA799016CF0EAD00A77F9F /* PGMJoinOrCreateReturn.m in Sources */,
+				92DA799216CF0EAD00A77F9F /* PGMPeerGroupManager.mm in Sources */,
+				92A2702F16DBF6EF00EC1654 /* PGMGroupRegistry.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92DA796516CF0E1C00A77F9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DA797B16CF0E1C00A77F9F /* PeerGroupManager_iOSTests.m in Sources */,
+				92DA798F16CF0EAD00A77F9F /* PGMGroup.m in Sources */,
+				92DA799116CF0EAD00A77F9F /* PGMJoinOrCreateReturn.m in Sources */,
+				92DA799316CF0EAD00A77F9F /* PGMPeerGroupManager.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		927A0C431702181A0062BB04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = crypto;
+			targetProxy = 927A0C421702181A0062BB04 /* PBXContainerItemProxy */;
+		};
+		92DA797116CF0E1C00A77F9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92DA795816CF0E1C00A77F9F /* PeerGroupManager_iOS */;
+			targetProxy = 92DA797016CF0E1C00A77F9F /* PBXContainerItemProxy */;
+		};
+		B8DA8DD316FB7FDD006CFE7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AllJoynFramework_iOS;
+			targetProxy = B8DA8DD216FB7FDD006CFE7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92DA797616CF0E1C00A77F9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92DA797716CF0E1C00A77F9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92DA797C16CF0E1C00A77F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		92DA797D16CF0E1C00A77F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92DA797F16CF0E1C00A77F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					arm7,
+				);
+				DSTROOT = /tmp/PeerGroupManager_iOS.dst;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeerGroupManager_iOS/PeerGroupManager_iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_objc/AllJoynFramework\"",
+					"\"$(OPENSSL_SRC)/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DQCC_OS_GROUP_POSIX",
+					"-DQCC_OS_DARWIN",
+				);
+				OTHER_LDFLAGS = (
+					"-lalljoyn",
+					"-lajdaemon",
+					"-lBundledDaemon.o",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		92DA798016CF0E1C00A77F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					arm7,
+				);
+				DSTROOT = /tmp/PeerGroupManager_iOS.dst;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeerGroupManager_iOS/PeerGroupManager_iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_objc/AllJoynFramework\"",
+					"\"$(OPENSSL_SRC)/include\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-DQCC_OS_GROUP_POSIX",
+					"-DQCC_OS_DARWIN",
+				);
+				OTHER_LDFLAGS = (
+					"-lalljoyn",
+					"-lajdaemon",
+					"-lBundledDaemon.o",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		92DA798216CF0E1C00A77F9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					arm7,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeerGroupManager_iOS/PeerGroupManager_iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_objc/AllJoynFramework\"",
+					"\"$(OPENSSL_SRC)/include\"",
+				);
+				INFOPLIST_FILE = "PeerGroupManager_iOSTests/PeerGroupManager_iOSTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DQCC_OS_GROUP_POSIX",
+					"-DQCC_OS_DARWIN",
+				);
+				OTHER_LDFLAGS = (
+					"-lalljoyn",
+					"-lajdaemon",
+					"-lBundledDaemon.o",
+					"-lssl",
+					"-lcrypto",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		92DA798316CF0E1C00A77F9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					arm7,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PeerGroupManager_iOS/PeerGroupManager_iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/inc\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/inc/alljoyn\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_objc/AllJoynFramework\"",
+					"\"$(OPENSSL_SRC)/include\"",
+				);
+				INFOPLIST_FILE = "PeerGroupManager_iOSTests/PeerGroupManager_iOSTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-DQCC_OS_GROUP_POSIX",
+					"-DQCC_OS_DARWIN",
+				);
+				OTHER_LDFLAGS = (
+					"-lalljoyn",
+					"-lajdaemon",
+					"-lBundledDaemon.o",
+					"-lssl",
+					"-lcrypto",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		B87E2F67170F69A30073523B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B87E2F68170F69A30073523B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92DA795416CF0E1C00A77F9F /* Build configuration list for PBXProject "PeerGroupManager_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DA797C16CF0E1C00A77F9F /* Debug */,
+				92DA797D16CF0E1C00A77F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92DA797E16CF0E1C00A77F9F /* Build configuration list for PBXNativeTarget "PeerGroupManager_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DA797F16CF0E1C00A77F9F /* Debug */,
+				92DA798016CF0E1C00A77F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92DA798116CF0E1C00A77F9F /* Build configuration list for PBXNativeTarget "PeerGroupManager_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92DA798216CF0E1C00A77F9F /* Debug */,
+				92DA798316CF0E1C00A77F9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B87E2F66170F69A30073523B /* Build configuration list for PBXAggregateTarget "API Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B87E2F67170F69A30073523B /* Debug */,
+				B87E2F68170F69A30073523B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92DA795116CF0E1C00A77F9F /* Project object */;
+}

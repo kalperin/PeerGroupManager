@@ -1,0 +1,33 @@
+<!--
+ /******************************************************************************
+ * Copyright 2013, Qualcomm Innovation Center, Inc.
+ *
+ *    All rights reserved.
+ *    This file is licensed under the 3-clause BSD license in the NOTICE.txt
+ *    file for this project. A copy of the 3-clause BSD license is found at:
+ *
+ *        http://opensource.org/licenses/BSD-3-Clause.
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the license is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the license for the specific language governing permissions and
+ *    limitations under the license.
+ ******************************************************************************/
+ -->
+<xml>
+    <node name="org/alljoyn/TestObject">
+        <annotation name="org.alljoyn.lang.objc" value="TestObject"/>
+        <annotation name="org.alljoyn.flags.pgm" value="1"/>
+        
+        <interface name="org.alljoyn.bus.samples.testInterface">
+            <annotation name="org.alljoyn.lang.objc" value="TestDelegate"/>
+            <method name="Echo">
+                <arg name="str" type="s" direction="in">
+                    <annotation name="org.alljoyn.lang.objc" value="echoString:"/>
+                </arg>
+                <arg name="outStr" type="s" direction="out"/>
+            </method>
+        </interface>
+    </node>
+</xml>

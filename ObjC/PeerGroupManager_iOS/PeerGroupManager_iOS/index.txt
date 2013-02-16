@@ -1,0 +1,4 @@
+The Peer Group Manager is a library that provides app developers with an easy entry point into peer-to-peer programming using AllJoyn. To get started, please see:
+
+  - The usage guide and other documentation at http://www.alljoyn.org.
+  - The API documentation for the PGMPeerGroupManager class, which is the main class in the library.
