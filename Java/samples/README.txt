@@ -6,7 +6,9 @@ Installation
 
  * The sample PeerGroupManagerApp is provided as an Eclipse project
    that, as distributed, depends on the PeerGroupManager Eclipse project.
-   You can import both by using File->Import in Eclipse.
+   You can import both by using File->Import in Eclipse (note: when
+   importing, make sure the "Copy projects into workspace" option is
+   not checked).
 
  * Before you can successfully build the sample project, you need to ensure that
    the projects can resolve their dependencies on files from the AllJoyn SDK.

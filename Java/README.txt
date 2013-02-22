@@ -5,7 +5,9 @@ Installation
 ------------
 
  * The PeerGroupManager library is provided as an Eclipse project.
-   You can import it by using File->Import in Eclipse.
+   You can import it by using File->Import in Eclipse (note: when
+   importing, make sure the "Copy projects into workspace" option is
+   not checked).
 
  * Before you can successfully build the library project, you need to ensure 
    that it can resolve its dependencies on files from the AllJoyn SDK. To
