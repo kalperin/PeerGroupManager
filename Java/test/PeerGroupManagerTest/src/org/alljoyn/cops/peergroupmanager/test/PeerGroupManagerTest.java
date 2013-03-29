@@ -431,6 +431,8 @@ public class PeerGroupManagerTest extends AndroidTestCase {
         assertTrue(callMethodAndWait(mPeerGroupManager1, "joinGroup", SERVICE_NAME) == Status.OK);
         
         assertTrue(mPeerGroupManager2.getNumPeers(SERVICE_NAME) == 2);
+        
+        setPortCleanUp(busForSetPortTest);
 	}
 	
 	
@@ -501,7 +503,7 @@ public class PeerGroupManagerTest extends AndroidTestCase {
         busForSetPortTest.requestName(SERVICE_PREFIX + "." + SERVICE_NAME, flag);
         busForSetPortTest.advertiseName(SERVICE_PREFIX + "." + SERVICE_NAME, SessionOpts.TRANSPORT_ANY);
         
-        mPeerGroupManager1.setSessionPort(port);
+        mPeerGroupManager1.setSessionPort(CONTACT_PORT);
         
         try {
             Thread.sleep(400);
