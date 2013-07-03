@@ -38,9 +38,7 @@
 		92DA799216CF0EAD00A77F9F /* PGMPeerGroupManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92DA798C16CF0EAD00A77F9F /* PGMPeerGroupManager.mm */; };
 		92DA799316CF0EAD00A77F9F /* PGMPeerGroupManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92DA798C16CF0EAD00A77F9F /* PGMPeerGroupManager.mm */; };
 		92DA799516CF153700A77F9F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DA799416CF153700A77F9F /* SystemConfiguration.framework */; };
-		B8DA8DD416FB7FE7006CFE7F /* libAllJoynFramework_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8580C8116EED10F00CC0D8C /* libAllJoynFramework_iOS.a */; };
 		B8DA8DD616FB8031006CFE7F /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 925393B916DD761E00BD6399 /* libstdc++.6.0.9.dylib */; };
-		B8DA8DE316FB81EC006CFE7F /* libAllJoynFramework_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8580C8116EED10F00CC0D8C /* libAllJoynFramework_iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,26 +63,19 @@
 			remoteGlobalIDString = 92DA795816CF0E1C00A77F9F;
 			remoteInfo = PeerGroupManager_iOS;
 		};
-		B8580C8016EED10F00CC0D8C /* PBXContainerItemProxy */ = {
+		A97154F217848D0D006EBBE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AC1030A8156EC82300D2853A;
 			remoteInfo = AllJoynFramework_iOS;
 		};
-		B8580C8216EED10F00CC0D8C /* PBXContainerItemProxy */ = {
+		A97154F417848D0D006EBBE1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AC1030B8156EC82300D2853A;
 			remoteInfo = AllJoynFramework_iOSTests;
-		};
-		B8DA8DD216FB7FDD006CFE7F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AC1030A7156EC82300D2853A;
-			remoteInfo = AllJoynFramework_iOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -124,7 +115,7 @@
 		92DA798C16CF0EAD00A77F9F /* PGMPeerGroupManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMPeerGroupManager.mm; sourceTree = "<group>"; };
 		92DA798D16CF0EAD00A77F9F /* PGMPeerGroupModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMPeerGroupModule.h; sourceTree = "<group>"; };
 		92DA799416CF153700A77F9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AllJoynFramework_iOS.xcodeproj; path = alljoyn_objc/AllJoynFramework_iOS/AllJoynFramework_iOS.xcodeproj; sourceTree = ALLJOYN_HOME; };
+		B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AllJoynFramework_iOS.xcodeproj; path = ../../../../../AllJoynFramework_iOS/AllJoynFramework_iOS.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				927A0C44170218200062BB04 /* libcrypto.a in Frameworks */,
-				B8DA8DD416FB7FE7006CFE7F /* libAllJoynFramework_iOS.a in Frameworks */,
 				925393BA16DD761E00BD6399 /* libstdc++.6.0.9.dylib in Frameworks */,
 				92DA799516CF153700A77F9F /* SystemConfiguration.framework in Frameworks */,
 				92DA795D16CF0E1C00A77F9F /* Foundation.framework in Frameworks */,
@@ -144,7 +134,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8DA8DE316FB81EC006CFE7F /* libAllJoynFramework_iOS.a in Frameworks */,
 				B8DA8DD616FB8031006CFE7F /* libstdc++.6.0.9.dylib in Frameworks */,
 				92DA796C16CF0E1C00A77F9F /* SenTestingKit.framework in Frameworks */,
 				92DA796E16CF0E1C00A77F9F /* UIKit.framework in Frameworks */,
@@ -242,11 +231,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B8580C7B16EED10F00CC0D8C /* Products */ = {
+		A97154ED17848D0D006EBBE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8580C8116EED10F00CC0D8C /* libAllJoynFramework_iOS.a */,
-				B8580C8316EED10F00CC0D8C /* AllJoynFramework_iOSTests.octest */,
+				A97154F317848D0D006EBBE1 /* libAllJoynFramework_iOS.a */,
+				A97154F517848D0D006EBBE1 /* AllJoynFramework_iOSTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,7 +255,6 @@
 			);
 			dependencies = (
 				927A0C431702181A0062BB04 /* PBXTargetDependency */,
-				B8DA8DD316FB7FDD006CFE7F /* PBXTargetDependency */,
 			);
 			name = PeerGroupManager_iOS;
 			productName = PeerGroupManager_iOS;
@@ -313,7 +301,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B8580C7B16EED10F00CC0D8C /* Products */;
+					ProductGroup = A97154ED17848D0D006EBBE1 /* Products */;
 					ProjectRef = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
 				},
 				{
@@ -338,18 +326,18 @@
 			remoteRef = 927A0C401702180F0062BB04 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B8580C8116EED10F00CC0D8C /* libAllJoynFramework_iOS.a */ = {
+		A97154F317848D0D006EBBE1 /* libAllJoynFramework_iOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libAllJoynFramework_iOS.a;
-			remoteRef = B8580C8016EED10F00CC0D8C /* PBXContainerItemProxy */;
+			remoteRef = A97154F217848D0D006EBBE1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B8580C8316EED10F00CC0D8C /* AllJoynFramework_iOSTests.octest */ = {
+		A97154F517848D0D006EBBE1 /* AllJoynFramework_iOSTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = AllJoynFramework_iOSTests.octest;
-			remoteRef = B8580C8216EED10F00CC0D8C /* PBXContainerItemProxy */;
+			remoteRef = A97154F417848D0D006EBBE1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -430,11 +418,6 @@
 			target = 92DA795816CF0E1C00A77F9F /* PeerGroupManager_iOS */;
 			targetProxy = 92DA797016CF0E1C00A77F9F /* PBXContainerItemProxy */;
 		};
-		B8DA8DD316FB7FDD006CFE7F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AllJoynFramework_iOS;
-			targetProxy = B8DA8DD216FB7FDD006CFE7F /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -505,10 +488,8 @@
 		92DA797F16CF0E1C00A77F9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD_32_BIT)",
-					arm7,
-				);
+				ALLJOYN_HOME = "$(SRCROOT)/../../../../../..";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/PeerGroupManager_iOS.dst;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -529,11 +510,16 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/lib\"",
 					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/lib\"",
 					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/lib\"",
 					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/lib\"",
+					"\"$(OPENSSL_ROOT)/build/$(CONFIGURATION)-$(PLATFORM_NAME)-$(CURRENT_ARCH)\"",
+					"\"$(OPENSSL_ROOT)/build/$(CONFIGURATION)-$(PLATFORM_NAME)\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OPENSSL_ROOT = "$(ALLJOYN_HOME)/alljoyn_objc/openssl";
 				OTHER_CFLAGS = (
 					"-DQCC_OS_GROUP_POSIX",
 					"-DQCC_OS_DARWIN",
@@ -551,10 +537,8 @@
 		92DA798016CF0E1C00A77F9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD_32_BIT)",
-					arm7,
-				);
+				ALLJOYN_HOME = "$(SRCROOT)/../../../../../..";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/PeerGroupManager_iOS.dst;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -575,11 +559,16 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/lib\"",
 					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/lib\"",
 					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/$(CURRENT_ARCH)/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/lib\"",
+					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/$(PLATFORM_NAME)/$(CONFIGURATION)/dist/cpp/lib\"",
 					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/lib\"",
+					"\"$(OPENSSL_ROOT)/build/$(CONFIGURATION)-$(PLATFORM_NAME)-$(CURRENT_ARCH)\"",
+					"\"$(OPENSSL_ROOT)/build/$(CONFIGURATION)-$(PLATFORM_NAME)\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OPENSSL_ROOT = "$(ALLJOYN_HOME)/alljoyn_objc/openssl";
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"-DQCC_OS_GROUP_POSIX",
