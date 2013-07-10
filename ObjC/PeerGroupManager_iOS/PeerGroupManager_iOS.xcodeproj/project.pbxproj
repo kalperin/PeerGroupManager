@@ -488,8 +488,8 @@
 		92DA797F16CF0E1C00A77F9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALLJOYN_HOME = "$(SRCROOT)/../../../../../..";
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ALLJOYN_HOME = "$(SRCROOT)/../../..";
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/PeerGroupManager_iOS.dst;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -519,7 +519,7 @@
 					"\"$(OPENSSL_ROOT)/build/$(CONFIGURATION)-$(PLATFORM_NAME)\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OPENSSL_ROOT = "$(ALLJOYN_HOME)/alljoyn_objc/openssl";
+				OPENSSL_ROOT = "$(ALLJOYN_HOME)/openssl";
 				OTHER_CFLAGS = (
 					"-DQCC_OS_GROUP_POSIX",
 					"-DQCC_OS_DARWIN",
@@ -537,8 +537,8 @@
 		92DA798016CF0E1C00A77F9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALLJOYN_HOME = "$(SRCROOT)/../../../../../..";
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ALLJOYN_HOME = "$(SRCROOT)/../../..";
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/PeerGroupManager_iOS.dst;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -568,7 +568,7 @@
 					"\"$(OPENSSL_ROOT)/build/$(CONFIGURATION)-$(PLATFORM_NAME)\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OPENSSL_ROOT = "$(ALLJOYN_HOME)/alljoyn_objc/openssl";
+				OPENSSL_ROOT = "$(ALLJOYN_HOME)/openssl";
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"-DQCC_OS_GROUP_POSIX",

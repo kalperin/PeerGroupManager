@@ -44,7 +44,6 @@
 		92FA166016E92047000CEA75 /* PGMPingGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FA165F16E92047000CEA75 /* PGMPingGroupViewController.m */; };
 		B8694FB116EED54100C173A1 /* libPeerGroupManager_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 921D1D8016E1933C0096C5B1 /* libPeerGroupManager_iOS.a */; };
 		B8694FB316EED54100C173A1 /* libAllJoynFramework_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8694FB216EED54100C173A1 /* libAllJoynFramework_iOS.a */; };
-		B8DEF394170204F900CE41F4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DEF393170204F900CE41F4 /* libcrypto.a */; };
 		B8DEF396170205B900CE41F4 /* ajnicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DEF395170205B900CE41F4 /* ajnicon.png */; };
 		B8DEF3981702079900CE41F4 /* AlljoynLogo300x388.png in Resources */ = {isa = PBXBuildFile; fileRef = B8DEF3971702079900CE41F4 /* AlljoynLogo300x388.png */; };
 		B8DEF3BC1703AF8200CE41F4 /* PGMSimpleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DEF3B8170384DE00CE41F4 /* PGMSimpleObject.m */; };
@@ -156,7 +155,6 @@
 		92FA165F16E92047000CEA75 /* PGMPingGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMPingGroupViewController.m; sourceTree = "<group>"; };
 		B8694FB216EED54100C173A1 /* libAllJoynFramework_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAllJoynFramework_iOS.a; path = "../../../../AllJoyn/git/alljoyn_objc/AllJoynFramework_iOS/build/Release-iphoneos/libAllJoynFramework_iOS.a"; sourceTree = "<group>"; };
 		B8B7081A17066C7300C10DD4 /* PeerGroupManagerCodeGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PeerGroupManagerCodeGenerator.xcodeproj; path = ../../PeerGroupManagerCodeGenerator/PeerGroupManagerCodeGenerator.xcodeproj; sourceTree = "<group>"; };
-		B8DEF393170204F900CE41F4 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../../../../Temp/SQLCipher/openssl-xcode/build/Release/libcrypto.a"; sourceTree = "<group>"; };
 		B8DEF395170205B900CE41F4 /* ajnicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ajnicon.png; sourceTree = "<group>"; };
 		B8DEF3971702079900CE41F4 /* AlljoynLogo300x388.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlljoynLogo300x388.png; sourceTree = "<group>"; };
 		B8DEF3B7170384DE00CE41F4 /* PGMSimpleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGMSimpleObject.h; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8DEF394170204F900CE41F4 /* libcrypto.a in Frameworks */,
 				B8694FB316EED54100C173A1 /* libAllJoynFramework_iOS.a in Frameworks */,
 				B8694FB116EED54100C173A1 /* libPeerGroupManager_iOS.a in Frameworks */,
 				92106D3116DE8FCF00044121 /* libstdc++.6.0.9.dylib in Frameworks */,
@@ -190,7 +187,6 @@
 				B8B7081A17066C7300C10DD4 /* PeerGroupManagerCodeGenerator.xcodeproj */,
 				921D1D7A16E1933C0096C5B1 /* PeerGroupManager_iOS.xcodeproj */,
 				B8DEF395170205B900CE41F4 /* ajnicon.png */,
-				B8DEF393170204F900CE41F4 /* libcrypto.a */,
 				92106D3016DE8FCF00044121 /* libstdc++.6.0.9.dylib */,
 				92106D2E16DE8FC700044121 /* SystemConfiguration.framework */,
 				92DC38D416F3CDBB0025F51E /* ajnicon57x57.png */,
@@ -591,8 +587,8 @@
 		92106D2916DE8AEC00044121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALLJOYN_HOME = "$(SRCROOT)/../../../../../../..";
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ALLJOYN_HOME = "$(SRCROOT)/../../..";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Keith Alperin (3YB2847DTU)";
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -621,7 +617,7 @@
 					"$(OPENSSL_ROOT)/build/$(CONFIGURATION)-$(PLATFORM_NAME)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OPENSSL_ROOT = "$(ALLJOYN_HOME)/alljoyn_objc/openssl";
+				OPENSSL_ROOT = "$(ALLJOYN_HOME)/openssl";
 				OTHER_CFLAGS = (
 					"-DQCC_OS_GROUP_POSIX",
 					"-DQCC_OS_DARWIN",
@@ -633,7 +629,7 @@
 					"-lssl",
 					"-lcrypto",
 				);
-				PGM_HOME = "$(SRCROOT)/../../..";
+				PGM_HOME = "$(ALLJOYN_HOME)/PeerGroupManager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "BE02DF2F-7177-43ED-84C3-9A57C74B4608";
 				SDKROOT = iphoneos;
@@ -645,8 +641,8 @@
 		92106D2A16DE8AEC00044121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALLJOYN_HOME = "$(SRCROOT)/../../../../../../..";
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ALLJOYN_HOME = "$(SRCROOT)/../../..";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Keith Alperin (3YB2847DTU)";
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -675,7 +671,7 @@
 					"\"$(ALLJOYN_HOME)/alljoyn_core/build/darwin/arm/iphonesimulator/$(CONFIGURATION)/dist/cpp/lib\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OPENSSL_ROOT = "$(ALLJOYN_HOME)/alljoyn_objc/openssl";
+				OPENSSL_ROOT = "$(ALLJOYN_HOME)/openssl";
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"-DQCC_OS_GROUP_POSIX",
@@ -688,7 +684,7 @@
 					"-lssl",
 					"-lcrypto",
 				);
-				PGM_HOME = "$(SRCROOT)/../../..";
+				PGM_HOME = "$(ALLJOYN_HOME)/PeerGroupManager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "BE02DF2F-7177-43ED-84C3-9A57C74B4608";
 				SDKROOT = iphoneos;
