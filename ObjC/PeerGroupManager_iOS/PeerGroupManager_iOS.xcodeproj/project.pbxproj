@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		925393BA16DD761E00BD6399 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 925393B916DD761E00BD6399 /* libstdc++.6.0.9.dylib */; };
-		927A0C44170218200062BB04 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 927A0C411702180F0062BB04 /* libcrypto.a */; };
 		92A2702F16DBF6EF00EC1654 /* PGMGroupRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2702E16DBF6EF00EC1654 /* PGMGroupRegistry.m */; };
 		92DA795D16CF0E1C00A77F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DA795C16CF0E1C00A77F9F /* Foundation.framework */; };
 		92DA796C16CF0E1C00A77F9F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DA796B16CF0E1C00A77F9F /* SenTestingKit.framework */; };
@@ -42,20 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		927A0C401702180F0062BB04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9222472517021791003AEFAA /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9069D28C0FCE659A0042E34C;
-			remoteInfo = crypto;
-		};
-		927A0C421702181A0062BB04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9222472517021791003AEFAA /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9069D28B0FCE659A0042E34C;
-			remoteInfo = crypto;
-		};
 		92DA797016CF0E1C00A77F9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 92DA795116CF0E1C00A77F9F /* Project object */;
@@ -99,7 +84,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9222472517021791003AEFAA /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = openssl.xcodeproj; sourceTree = OPENSSL_PROJ; };
 		925393B916DD761E00BD6399 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		92A2702E16DBF6EF00EC1654 /* PGMGroupRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMGroupRegistry.m; sourceTree = "<group>"; };
 		92DA795916CF0E1C00A77F9F /* libPeerGroupManager_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPeerGroupManager_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927A0C44170218200062BB04 /* libcrypto.a in Frameworks */,
 				925393BA16DD761E00BD6399 /* libstdc++.6.0.9.dylib in Frameworks */,
 				92DA799516CF153700A77F9F /* SystemConfiguration.framework in Frameworks */,
 				92DA795D16CF0E1C00A77F9F /* Foundation.framework in Frameworks */,
@@ -152,18 +135,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		927A0C3B1702180F0062BB04 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				927A0C411702180F0062BB04 /* libcrypto.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		92DA795016CF0E1C00A77F9F = {
 			isa = PBXGroup;
 			children = (
-				9222472517021791003AEFAA /* openssl.xcodeproj */,
 				B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */,
 				925393B916DD761E00BD6399 /* libstdc++.6.0.9.dylib */,
 				92DA799416CF153700A77F9F /* SystemConfiguration.framework */,
@@ -262,7 +236,6 @@
 			);
 			dependencies = (
 				A930C4D1178E1BEB00F146CE /* PBXTargetDependency */,
-				927A0C431702181A0062BB04 /* PBXTargetDependency */,
 			);
 			name = PeerGroupManager_iOS;
 			productName = PeerGroupManager_iOS;
@@ -312,10 +285,6 @@
 					ProductGroup = A9901F70178E1A7C00551620 /* Products */;
 					ProjectRef = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
 				},
-				{
-					ProductGroup = 927A0C3B1702180F0062BB04 /* Products */;
-					ProjectRef = 9222472517021791003AEFAA /* openssl.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -327,13 +296,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		927A0C411702180F0062BB04 /* libcrypto.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcrypto.a;
-			remoteRef = 927A0C401702180F0062BB04 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		A9901F76178E1A7C00551620 /* libAllJoynFramework_iOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -416,11 +378,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		927A0C431702181A0062BB04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = crypto;
-			targetProxy = 927A0C421702181A0062BB04 /* PBXContainerItemProxy */;
-		};
 		92DA797116CF0E1C00A77F9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 92DA795816CF0E1C00A77F9F /* PeerGroupManager_iOS */;
