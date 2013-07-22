@@ -267,7 +267,7 @@
 		92DA795116CF0E1C00A77F9F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = QuIC;
 			};
 			buildConfigurationList = 92DA795416CF0E1C00A77F9F /* Build configuration list for PBXProject "PeerGroupManager_iOS" */;
@@ -459,7 +459,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLJOYN_HOME = "$(SRCROOT)/../../..";
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/PeerGroupManager_iOS.dst;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -508,7 +507,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLJOYN_HOME = "$(SRCROOT)/../../..";
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/PeerGroupManager_iOS.dst;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -557,10 +555,6 @@
 		92DA798216CF0E1C00A77F9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD_32_BIT)",
-					arm7,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -609,10 +603,6 @@
 		92DA798316CF0E1C00A77F9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD_32_BIT)",
-					arm7,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
