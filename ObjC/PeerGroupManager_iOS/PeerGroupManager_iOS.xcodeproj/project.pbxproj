@@ -48,26 +48,26 @@
 			remoteGlobalIDString = 92DA795816CF0E1C00A77F9F;
 			remoteInfo = PeerGroupManager_iOS;
 		};
-		A930C4D0178E1BEB00F146CE /* PBXContainerItemProxy */ = {
+		A9CA5318179E294000FC7320 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AC1030A7156EC82300D2853A;
-			remoteInfo = AllJoynFramework_iOS;
-		};
-		A9901F75178E1A7C00551620 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
+			containerPortal = A9CA5312179E293F00FC7320 /* AllJoynFramework_iOS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AC1030A8156EC82300D2853A;
 			remoteInfo = AllJoynFramework_iOS;
 		};
-		A9901F77178E1A7C00551620 /* PBXContainerItemProxy */ = {
+		A9CA531A179E294000FC7320 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
+			containerPortal = A9CA5312179E293F00FC7320 /* AllJoynFramework_iOS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AC1030B8156EC82300D2853A;
 			remoteInfo = AllJoynFramework_iOSTests;
+		};
+		A9CA531C179E295600FC7320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9CA5312179E293F00FC7320 /* AllJoynFramework_iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AC1030A7156EC82300D2853A;
+			remoteInfo = AllJoynFramework_iOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -106,7 +106,7 @@
 		92DA798C16CF0EAD00A77F9F /* PGMPeerGroupManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMPeerGroupManager.mm; sourceTree = "<group>"; };
 		92DA798D16CF0EAD00A77F9F /* PGMPeerGroupModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMPeerGroupModule.h; sourceTree = "<group>"; };
 		92DA799416CF153700A77F9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AllJoynFramework_iOS.xcodeproj; path = "../../../../alljoyn-3.3.0-osx_ios-sdk/alljoyn_objc/AllJoynFramework_iOS/AllJoynFramework_iOS.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		A9CA5312179E293F00FC7320 /* AllJoynFramework_iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AllJoynFramework_iOS.xcodeproj; path = ../../../alljoyn_objc/AllJoynFramework_iOS/AllJoynFramework_iOS.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 		92DA795016CF0E1C00A77F9F = {
 			isa = PBXGroup;
 			children = (
-				B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */,
+				A9CA5312179E293F00FC7320 /* AllJoynFramework_iOS.xcodeproj */,
 				925393B916DD761E00BD6399 /* libstdc++.6.0.9.dylib */,
 				92DA799416CF153700A77F9F /* SystemConfiguration.framework */,
 				92DA795E16CF0E1C00A77F9F /* PeerGroupManager_iOS */,
@@ -212,11 +212,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A9901F70178E1A7C00551620 /* Products */ = {
+		A9CA5313179E293F00FC7320 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9901F76178E1A7C00551620 /* libAllJoynFramework_iOS.a */,
-				A9901F78178E1A7C00551620 /* AllJoynFramework_iOSTests.octest */,
+				A9CA5319179E294000FC7320 /* libAllJoynFramework_iOS.a */,
+				A9CA531B179E294000FC7320 /* AllJoynFramework_iOSTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A930C4D1178E1BEB00F146CE /* PBXTargetDependency */,
+				A9CA531D179E295600FC7320 /* PBXTargetDependency */,
 			);
 			name = PeerGroupManager_iOS;
 			productName = PeerGroupManager_iOS;
@@ -282,8 +282,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A9901F70178E1A7C00551620 /* Products */;
-					ProjectRef = B828232316EECFA30062FEBC /* AllJoynFramework_iOS.xcodeproj */;
+					ProductGroup = A9CA5313179E293F00FC7320 /* Products */;
+					ProjectRef = A9CA5312179E293F00FC7320 /* AllJoynFramework_iOS.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -296,18 +296,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A9901F76178E1A7C00551620 /* libAllJoynFramework_iOS.a */ = {
+		A9CA5319179E294000FC7320 /* libAllJoynFramework_iOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libAllJoynFramework_iOS.a;
-			remoteRef = A9901F75178E1A7C00551620 /* PBXContainerItemProxy */;
+			remoteRef = A9CA5318179E294000FC7320 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A9901F78178E1A7C00551620 /* AllJoynFramework_iOSTests.octest */ = {
+		A9CA531B179E294000FC7320 /* AllJoynFramework_iOSTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = AllJoynFramework_iOSTests.octest;
-			remoteRef = A9901F77178E1A7C00551620 /* PBXContainerItemProxy */;
+			remoteRef = A9CA531A179E294000FC7320 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -383,10 +383,10 @@
 			target = 92DA795816CF0E1C00A77F9F /* PeerGroupManager_iOS */;
 			targetProxy = 92DA797016CF0E1C00A77F9F /* PBXContainerItemProxy */;
 		};
-		A930C4D1178E1BEB00F146CE /* PBXTargetDependency */ = {
+		A9CA531D179E295600FC7320 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AllJoynFramework_iOS;
-			targetProxy = A930C4D0178E1BEB00F146CE /* PBXContainerItemProxy */;
+			targetProxy = A9CA531C179E295600FC7320 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -426,7 +426,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -449,7 +449,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
