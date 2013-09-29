@@ -67,6 +67,31 @@
  */
 - (id)initWithGroupPrefix:(NSString *)prefix withPeerGroupDelegate:(id <PGMPeerGroupDelegate>)delegate withBusObjects:(NSArray *)busObjects;
 
+/**
+ * Initialize the PeerGroupManager and register the provided PeerGroupDelegate
+ * and bus objects.
+ *
+ * The PeerGroupManager will automatically connect to the AllJoyn
+ * bus and start discovering groups created by other
+ * PeerGroupManagers that use the same group prefix.
+ *
+ * @param prefix       the prefix of the advertised name that will be used
+ *                     for advertisement and discovery.
+ *
+ * @param delegate     the PeerGroupDelegate to register. This can be null.
+ *
+ * @param busObjects   the bus objects to register. This can be nil. Bus
+ *                     objects can be registered later via call to
+ *                     registerBusObject:
+ *
+ * @param defaultSessionOptions		the AJNSessionOptions to be used when creating or advertising bus objects.  Cannot be nil.
+ *
+ * @warning            *NOTE:* Your PeerGroupManager will only be able to
+ *                     communicate with other PeerGroupManagers that use
+ *                     the same group prefix.
+ */
+- (id)initWithGroupPrefix:(NSString *)prefix withPeerGroupDelegate:(id <PGMPeerGroupDelegate>)delegate withBusObjects:(NSArray *)busObjects defaultSessionOptions:(AJNSessionOptions*)defaultSessionOptions;
+
 /** 
  * Permanently disconnect the PeerGroupManager from the AllJoyn daemon.
  *

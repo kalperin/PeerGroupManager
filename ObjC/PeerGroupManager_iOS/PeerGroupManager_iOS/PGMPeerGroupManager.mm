@@ -205,6 +205,16 @@ static volatile int32_t globalPendingJoins = 0;
 
 - (id)initWithGroupPrefix:(NSString *)prefix withPeerGroupDelegate:(id <PGMPeerGroupDelegate>)delegate withBusObjects:(NSArray *)busObjects
 {
+	AJNSessionOptions* defaultBusObjects = [[AJNSessionOptions alloc] initWithTrafficType:kAJNTrafficMessages supportsMultipoint:YES proximity:kAJNProximityAny transportMask:kAJNTransportMaskAny];
+	
+	return [self initWithGroupPrefix:prefix
+			   withPeerGroupDelegate:delegate
+					  withBusObjects:busObjects
+			   defaultSessionOptions:defaultBusObjects];
+}
+
+- (id)initWithGroupPrefix:(NSString *)prefix withPeerGroupDelegate:(id <PGMPeerGroupDelegate>)delegate withBusObjects:(NSArray *)busObjects defaultSessionOptions:(AJNSessionOptions*)defaultSessionOptions;
+{
     self = [super init];
     if(self)
     {
@@ -217,9 +227,9 @@ static volatile int32_t globalPendingJoins = 0;
         self.groupRegistry = [[PGMGroupRegistry alloc] init];
         self.bus = [[AJNBusAttachment alloc] initWithApplicationName:prefix allowRemoteMessages:YES];
         self.registeredBusObjects = [[NSMutableArray alloc] init];
-        self.defaultSessionOpts = [[AJNSessionOptions alloc] initWithTrafficType:kAJNTrafficMessages supportsMultipoint:YES proximity:kAJNProximityAny transportMask:kAJNTransportMaskAny];
+        self.defaultSessionOpts = defaultSessionOptions;
         self.defaultSessionPort = PGMBadSessionPort;
-            
+		
         // Add the PGM Delegate
         self.delegates = [[NSMutableArray alloc] init];
         if(delegate != nil)
