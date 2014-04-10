@@ -1,3 +1,12 @@
+*~
+bin
+obj
+gen
+doc
+libs
+.metadata
+
+# https://github.com/github/gitignore/blob/master/Objective-C.gitignore
 .DS_Store
 */build/*
 *.pbxuser
@@ -17,7 +26,3 @@ DerivedData/
 *.swp
 *.lock
 *~.nib
-binx
-build
-xcshareddata
-
